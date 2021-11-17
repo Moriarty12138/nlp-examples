@@ -139,6 +139,9 @@ data_collator = DataCollatorForSeq2Seq(
 
 train_args = TrainingArguments(
     output_dir=output_dir,
+    do_train = True,
+    do_eval = True,
+    do_predict = True,
     num_train_epochs=num_train_epochs,
     per_device_train_batch_size=per_device_train_batch_size,
     per_device_eval_batch_size=per_device_eval_batch_size,
@@ -148,6 +151,7 @@ train_args = TrainingArguments(
     logging_steps=logging_steps,
     save_steps=save_steps,
     save_strategy=save_strategy,
+    predict_with_generate = True,
 )
 print(train_args)
 rouge = Rouge()
