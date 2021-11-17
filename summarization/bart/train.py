@@ -151,7 +151,6 @@ train_args = TrainingArguments(
     logging_steps=logging_steps,
     save_steps=save_steps,
     save_strategy=save_strategy,
-    predict_with_generate = True,
 )
 print(train_args)
 rouge = Rouge()
