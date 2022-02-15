@@ -10,4 +10,4 @@
   * iflytek_classification.py 在iflytek长文本分类数据集上对BERT模型进行 fine-tuning
 * summarization 文本摘要
   * bart 使用开源CPT预训练模型作为bart权重，完成文本摘要训练。  
-hr_analysis.ipynb 员工离职数据分析，包含一些图表的画法
+* hr_analysis.ipynb 员工离职数据分析，包含一些图表的画法
