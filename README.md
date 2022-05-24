@@ -1,5 +1,5 @@
 # nlp-demos
-平时积累的一些NLP代码。
+平时积累的一些 NLP demo 代码。
 
 
 
