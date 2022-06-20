@@ -1,0 +1,63 @@
+diff -r ./data/processors/squad.py /home/rc/zqyang5/anaconda3/lib/python3.7/site-packages/transformers/data/processors/squad.py
+105c105
+<         sub_tokens = tokenizer.tokenize(token,add_prefix_space=True)
+---
+>         sub_tokens = tokenizer.tokenize(token)
+123c123
+<     truncated_query = tokenizer.encode(example.question_text, add_special_tokens=False, max_length=max_query_length, add_prefix_space=True)
+---
+>     truncated_query = tokenizer.encode(example.question_text, add_special_tokens=False, max_length=max_query_length)
+142c142
+<             return_token_type_ids=True, add_prefix_space=True
+---
+>             return_token_type_ids=True,
+199c199
+<         p_mask = np.ones_like(span["token_type_ids"])
+---
+>         p_mask = np.array(span["token_type_ids"])
+201,204c201
+<         if tokenizer.padding_side == "right":
+<             p_mask[len(truncated_query) + sequence_added_tokens :] = 0
+<         else:
+<             p_mask[-len(span["tokens"]) : -(len(truncated_query) + sequence_added_tokens)] = 0
+---
+>         p_mask = np.minimum(p_mask, 1)
+206,207c203,205
+<         pad_token_indices = np.where(np.array(span["input_ids"]) == tokenizer.pad_token_id)
+<         special_token_indices = np.where(np.array(tokenizer.get_special_tokens_mask(span["input_ids"], already_has_special_tokens=True)))
+---
+>         if tokenizer.padding_side == "right":
+>             # Limit positive values to one
+>             p_mask = 1 - p_mask
+209,210c207
+<         p_mask[pad_token_indices] = 1
+<         p_mask[special_token_indices] = 1
+---
+>         p_mask[np.where(np.array(span["input_ids"]) == tokenizer.sep_token_id)[0]] = 1
+diff -r ./modeling_bert.py /home/rc/zqyang5/anaconda3/lib/python3.7/site-packages/transformers/modeling_bert.py
+1415,1416c1415
+<         input_ids,
+<         p_mask,
+---
+>         input_ids=None,
+1487,1488d1485
+<         #doc_mask[:,0] = 0
+<         logits = logits + p_mask.unsqueeze(-1) * -10000.0
+1511c1508
+<         return outputs, intermediate_embeddings  # (loss), start_logits, end_logits, (hidden_states), (attentions)
+---
+>         return outputs  # (loss), start_logits, end_logits, (hidden_states), (attentions)
+diff -r ./modeling_roberta.py /home/rc/zqyang5/anaconda3/lib/python3.7/site-packages/transformers/modeling_roberta.py
+605d604
+<         p_mask,
+664c663
+<         outputs, intermediate_embeddings = self.roberta(
+---
+>         outputs = self.roberta(
+676,677d674
+<         #doc_mask[:,0] = 0
+<         logits = logits + p_mask.unsqueeze(-1) * -10000.0
+700c697
+<         return outputs, intermediate_embeddings  # (loss), start_logits, end_logits, (hidden_states), (attentions)
+---
+>         return outputs  # (loss), start_logits, end_logits, (hidden_states), (attentions)

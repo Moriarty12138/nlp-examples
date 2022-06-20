@@ -6,11 +6,21 @@
 # @File    : test.py
 
 import torch
+import random
+from torch import Tensor
+from typing import List
+from torch.nn.utils.rnn import pack_padded_sequence, pad_sequence
 
 
-max_len = 12
-bsz = 10
+# a = torch.ones(25, 300)
+# b = torch.ones(22, 300)
+# c = torch.ones(15, 300)
+# c = pad_sequence([a, b, c], batch_first=True, padding_value=0)
+# c= pack_padded_sequence(c, torch.tensor([3]))
+# # print(c)
+# # print(c.size())
+# print(c.batch_sizes())
 
-a = torch.tensor([[0 for _ in range(max_len)] for _ in range(bsz)], dtype=torch.long)
-
-print(a.size())
+while True:
+    r = random.randint(0, 10-1)
+    print(r)
