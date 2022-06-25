@@ -1,0 +1,919 @@
+model_name_or_path, 	../../models/bert-base-chinese
+train_dataset_path, 	../../datasets/Event_Competition/train_7000.json
+valid_dataset_path, 	../../datasets/Event_Competition/valid_1500.json
+test_dataset_path, 	../../datasets/Event_Competition/test_A.json
+model_save_path, 	./output
+max_len, 	256
+seed, 	1202
+no_cuda, 	False
+train_batch_size, 	128
+valid_batch_size, 	64
+n_epochs, 	100
+lr, 	5e-05
+warmup_proportion, 	0.1
+max_grad_norm, 	1.0
+do_train, 	True
+do_test, 	True
+do_eval, 	True
+device, 	cuda
+Epoch=0, 	batch_idx=0, 	loss=2.043353319168091
+Epoch=0, 	batch_idx=10, 	loss=2.0894479751586914
+Epoch=0, 	batch_idx=20, 	loss=1.9855060577392578
+Epoch=0, 	batch_idx=30, 	loss=1.9347035884857178
+Epoch=0, 	batch_idx=40, 	loss=1.8736943006515503
+Epoch=0, 	batch_idx=50, 	loss=1.7373905181884766
+Epoch=0, 	batch_idx=60, 	loss=1.7621756792068481
+Epoch=0, 	batch_idx=70, 	loss=1.559908390045166
+EP 0: F1 score: 0.19008348340542983, Acc: 0.6713333333333333
+Epoch=1, 	batch_idx=0, 	loss=1.5501387119293213
+Epoch=1, 	batch_idx=10, 	loss=1.3707488775253296
+Epoch=1, 	batch_idx=20, 	loss=1.2421737909317017
+Epoch=1, 	batch_idx=30, 	loss=1.184970498085022
+Epoch=1, 	batch_idx=40, 	loss=0.9275473952293396
+Epoch=1, 	batch_idx=50, 	loss=1.090813159942627
+Epoch=1, 	batch_idx=60, 	loss=0.8539955019950867
+Epoch=1, 	batch_idx=70, 	loss=0.9081296920776367
+EP 1: F1 score: 0.6219701826670903, Acc: 0.8246666666666667
+Epoch=2, 	batch_idx=0, 	loss=0.6674215793609619
+Epoch=2, 	batch_idx=10, 	loss=0.7655261754989624
+Epoch=2, 	batch_idx=20, 	loss=0.7374079823493958
+Epoch=2, 	batch_idx=30, 	loss=0.6465112566947937
+Epoch=2, 	batch_idx=40, 	loss=0.5778555274009705
+Epoch=2, 	batch_idx=50, 	loss=0.6366718411445618
+Epoch=2, 	batch_idx=60, 	loss=0.5910502672195435
+Epoch=2, 	batch_idx=70, 	loss=0.543181836605072
+EP 2: F1 score: 0.6284788853369099, Acc: 0.8006666666666666
+Epoch=3, 	batch_idx=0, 	loss=0.6738408207893372
+Epoch=3, 	batch_idx=10, 	loss=0.6263779997825623
+Epoch=3, 	batch_idx=20, 	loss=0.6000364422798157
+Epoch=3, 	batch_idx=30, 	loss=0.4036804437637329
+Epoch=3, 	batch_idx=40, 	loss=0.4023202955722809
+Epoch=3, 	batch_idx=50, 	loss=0.5035400390625
+Epoch=3, 	batch_idx=60, 	loss=0.537726104259491
+Epoch=3, 	batch_idx=70, 	loss=0.44019052386283875
+EP 3: F1 score: 0.6684945470748256, Acc: 0.8313333333333334
+Epoch=4, 	batch_idx=0, 	loss=0.3813130259513855
+Epoch=4, 	batch_idx=10, 	loss=0.25296270847320557
+Epoch=4, 	batch_idx=20, 	loss=0.3859204649925232
+Epoch=4, 	batch_idx=30, 	loss=0.3883027732372284
+Epoch=4, 	batch_idx=40, 	loss=0.3790125846862793
+Epoch=4, 	batch_idx=50, 	loss=0.24594144523143768
+Epoch=4, 	batch_idx=60, 	loss=0.4022941589355469
+Epoch=4, 	batch_idx=70, 	loss=0.3006401062011719
+EP 4: F1 score: 0.6452395725067537, Acc: 0.8173333333333334
+Epoch=5, 	batch_idx=0, 	loss=0.24011008441448212
+Epoch=5, 	batch_idx=10, 	loss=0.3653091788291931
+Epoch=5, 	batch_idx=20, 	loss=0.17656826972961426
+Epoch=5, 	batch_idx=30, 	loss=0.19033029675483704
+Epoch=5, 	batch_idx=40, 	loss=0.3490365147590637
+Epoch=5, 	batch_idx=50, 	loss=0.30360355973243713
+Epoch=5, 	batch_idx=60, 	loss=0.35194075107574463
+Epoch=5, 	batch_idx=70, 	loss=0.3118472695350647
+EP 5: F1 score: 0.6336407495453009, Acc: 0.8113333333333334
+Epoch=6, 	batch_idx=0, 	loss=0.18443863093852997
+Epoch=6, 	batch_idx=10, 	loss=0.18377593159675598
+Epoch=6, 	batch_idx=20, 	loss=0.22493049502372742
+Epoch=6, 	batch_idx=30, 	loss=0.15475983917713165
+Epoch=6, 	batch_idx=40, 	loss=0.08858936280012131
+Epoch=6, 	batch_idx=50, 	loss=0.16273166239261627
+Epoch=6, 	batch_idx=60, 	loss=0.16916808485984802
+Epoch=6, 	batch_idx=70, 	loss=0.14656245708465576
+EP 6: F1 score: 0.6495519956372824, Acc: 0.8233333333333334
+Epoch=7, 	batch_idx=0, 	loss=0.10020817816257477
+Epoch=7, 	batch_idx=10, 	loss=0.15072177350521088
+Epoch=7, 	batch_idx=20, 	loss=0.07593730092048645
+Epoch=7, 	batch_idx=30, 	loss=0.1505812108516693
+Epoch=7, 	batch_idx=40, 	loss=0.100706085562706
+Epoch=7, 	batch_idx=50, 	loss=0.12487143278121948
+Epoch=7, 	batch_idx=60, 	loss=0.1194186732172966
+Epoch=7, 	batch_idx=70, 	loss=0.054018717259168625
+EP 7: F1 score: 0.6235986258729713, Acc: 0.8033333333333333
+Epoch=8, 	batch_idx=0, 	loss=0.09749968349933624
+Epoch=8, 	batch_idx=10, 	loss=0.11706799268722534
+Epoch=8, 	batch_idx=20, 	loss=0.05473276227712631
+Epoch=8, 	batch_idx=30, 	loss=0.10968553274869919
+Epoch=8, 	batch_idx=40, 	loss=0.08522947132587433
+Epoch=8, 	batch_idx=50, 	loss=0.09484180063009262
+Epoch=8, 	batch_idx=60, 	loss=0.0343964546918869
+Epoch=8, 	batch_idx=70, 	loss=0.22911813855171204
+EP 8: F1 score: 0.6619714427045822, Acc: 0.8206666666666667
+Epoch=9, 	batch_idx=0, 	loss=0.07448142021894455
+Epoch=9, 	batch_idx=10, 	loss=0.09448044747114182
+Epoch=9, 	batch_idx=20, 	loss=0.10062475502490997
+Epoch=9, 	batch_idx=30, 	loss=0.048566192388534546
+Epoch=9, 	batch_idx=40, 	loss=0.11827750504016876
+Epoch=9, 	batch_idx=50, 	loss=0.07244625687599182
+Epoch=9, 	batch_idx=60, 	loss=0.09790404886007309
+Epoch=9, 	batch_idx=70, 	loss=0.18171077966690063
+EP 9: F1 score: 0.6328930795361174, Acc: 0.814
+Epoch=10, 	batch_idx=0, 	loss=0.03627051040530205
+Epoch=10, 	batch_idx=10, 	loss=0.06761419773101807
+Epoch=10, 	batch_idx=20, 	loss=0.04143483191728592
+Epoch=10, 	batch_idx=30, 	loss=0.15351419150829315
+Epoch=10, 	batch_idx=40, 	loss=0.03550240397453308
+Epoch=10, 	batch_idx=50, 	loss=0.0401284359395504
+Epoch=10, 	batch_idx=60, 	loss=0.055255573242902756
+Epoch=10, 	batch_idx=70, 	loss=0.11729278415441513
+EP 10: F1 score: 0.6257110092601019, Acc: 0.7926666666666666
+Epoch=11, 	batch_idx=0, 	loss=0.11798705905675888
+Epoch=11, 	batch_idx=10, 	loss=0.04653196036815643
+Epoch=11, 	batch_idx=20, 	loss=0.13504107296466827
+Epoch=11, 	batch_idx=30, 	loss=0.03523045405745506
+Epoch=11, 	batch_idx=40, 	loss=0.18337439000606537
+Epoch=11, 	batch_idx=50, 	loss=0.0829290822148323
+Epoch=11, 	batch_idx=60, 	loss=0.14704696834087372
+Epoch=11, 	batch_idx=70, 	loss=0.05136165767908096
+EP 11: F1 score: 0.6578976659688074, Acc: 0.8166666666666667
+Epoch=12, 	batch_idx=0, 	loss=0.027492502704262733
+Epoch=12, 	batch_idx=10, 	loss=0.07602877914905548
+Epoch=12, 	batch_idx=20, 	loss=0.05259416624903679
+Epoch=12, 	batch_idx=30, 	loss=0.058447301387786865
+Epoch=12, 	batch_idx=40, 	loss=0.02472539432346821
+Epoch=12, 	batch_idx=50, 	loss=0.06125103682279587
+Epoch=12, 	batch_idx=60, 	loss=0.0946829691529274
+Epoch=12, 	batch_idx=70, 	loss=0.10173497349023819
+EP 12: F1 score: 0.643609672941196, Acc: 0.828
+Epoch=13, 	batch_idx=0, 	loss=0.1003619134426117
+Epoch=13, 	batch_idx=10, 	loss=0.05545802041888237
+Epoch=13, 	batch_idx=20, 	loss=0.07166700065135956
+Epoch=13, 	batch_idx=30, 	loss=0.02378740720450878
+Epoch=13, 	batch_idx=40, 	loss=0.051197703927755356
+Epoch=13, 	batch_idx=50, 	loss=0.009587491862475872
+Epoch=13, 	batch_idx=60, 	loss=0.03702228143811226
+Epoch=13, 	batch_idx=70, 	loss=0.030080411583185196
+EP 13: F1 score: 0.6541391273815944, Acc: 0.8193333333333334
+Epoch=14, 	batch_idx=0, 	loss=0.007498677354305983
+Epoch=14, 	batch_idx=10, 	loss=0.025892391800880432
+Epoch=14, 	batch_idx=20, 	loss=0.01265091635286808
+Epoch=14, 	batch_idx=30, 	loss=0.004341463092714548
+Epoch=14, 	batch_idx=40, 	loss=0.057090941816568375
+Epoch=14, 	batch_idx=50, 	loss=0.10483717918395996
+Epoch=14, 	batch_idx=60, 	loss=0.03711206465959549
+Epoch=14, 	batch_idx=70, 	loss=0.03775038570165634
+EP 14: F1 score: 0.6297695632729557, Acc: 0.818
+Epoch=15, 	batch_idx=0, 	loss=0.004061431158334017
+Epoch=15, 	batch_idx=10, 	loss=0.024958178400993347
+Epoch=15, 	batch_idx=20, 	loss=0.01922239363193512
+Epoch=15, 	batch_idx=30, 	loss=0.010043240152299404
+Epoch=15, 	batch_idx=40, 	loss=0.030589524656534195
+Epoch=15, 	batch_idx=50, 	loss=0.02641582116484642
+Epoch=15, 	batch_idx=60, 	loss=0.06226770207285881
+Epoch=15, 	batch_idx=70, 	loss=0.11694477498531342
+EP 15: F1 score: 0.6560121029064538, Acc: 0.8046666666666666
+Epoch=16, 	batch_idx=0, 	loss=0.062296681106090546
+Epoch=16, 	batch_idx=10, 	loss=0.028373364359140396
+Epoch=16, 	batch_idx=20, 	loss=0.04156617075204849
+Epoch=16, 	batch_idx=30, 	loss=0.056200142949819565
+Epoch=16, 	batch_idx=40, 	loss=0.04188661649823189
+Epoch=16, 	batch_idx=50, 	loss=0.028935886919498444
+Epoch=16, 	batch_idx=60, 	loss=0.049142688512802124
+Epoch=16, 	batch_idx=70, 	loss=0.008620760403573513
+EP 16: F1 score: 0.6304906333425935, Acc: 0.8206666666666667
+Epoch=17, 	batch_idx=0, 	loss=0.054597098380327225
+Epoch=17, 	batch_idx=10, 	loss=0.005796860903501511
+Epoch=17, 	batch_idx=20, 	loss=0.029874416068196297
+Epoch=17, 	batch_idx=30, 	loss=0.04014855623245239
+Epoch=17, 	batch_idx=40, 	loss=0.026898490265011787
+Epoch=17, 	batch_idx=50, 	loss=0.06867752969264984
+Epoch=17, 	batch_idx=60, 	loss=0.05518488585948944
+Epoch=17, 	batch_idx=70, 	loss=0.05830666050314903
+EP 17: F1 score: 0.6424884999356608, Acc: 0.8046666666666666
+Epoch=18, 	batch_idx=0, 	loss=0.022496603429317474
+Epoch=18, 	batch_idx=10, 	loss=0.06178542599081993
+Epoch=18, 	batch_idx=20, 	loss=0.005421365611255169
+Epoch=18, 	batch_idx=30, 	loss=0.03588438779115677
+Epoch=18, 	batch_idx=40, 	loss=0.0954848900437355
+Epoch=18, 	batch_idx=50, 	loss=0.07543685287237167
+Epoch=18, 	batch_idx=60, 	loss=0.0137934610247612
+Epoch=18, 	batch_idx=70, 	loss=0.16364245116710663
+EP 18: F1 score: 0.6230640034420475, Acc: 0.7766666666666666
+Epoch=19, 	batch_idx=0, 	loss=0.14503268897533417
+Epoch=19, 	batch_idx=10, 	loss=0.03519854694604874
+Epoch=19, 	batch_idx=20, 	loss=0.009639243595302105
+Epoch=19, 	batch_idx=30, 	loss=0.02655576914548874
+Epoch=19, 	batch_idx=40, 	loss=0.011045033112168312
+Epoch=19, 	batch_idx=50, 	loss=0.03571530058979988
+Epoch=19, 	batch_idx=60, 	loss=0.02065166085958481
+Epoch=19, 	batch_idx=70, 	loss=0.11678613722324371
+EP 19: F1 score: 0.6233703795900941, Acc: 0.7973333333333333
+Epoch=20, 	batch_idx=0, 	loss=0.03796308860182762
+Epoch=20, 	batch_idx=10, 	loss=0.007564004976302385
+Epoch=20, 	batch_idx=20, 	loss=0.02907647006213665
+Epoch=20, 	batch_idx=30, 	loss=0.060042720288038254
+Epoch=20, 	batch_idx=40, 	loss=0.052932675927877426
+Epoch=20, 	batch_idx=50, 	loss=0.00205646688118577
+Epoch=20, 	batch_idx=60, 	loss=0.0027743903920054436
+Epoch=20, 	batch_idx=70, 	loss=0.13681961596012115
+EP 20: F1 score: 0.6310728232004243, Acc: 0.8013333333333333
+Epoch=21, 	batch_idx=0, 	loss=0.05589844286441803
+Epoch=21, 	batch_idx=10, 	loss=0.012287730351090431
+Epoch=21, 	batch_idx=20, 	loss=0.05564291030168533
+Epoch=21, 	batch_idx=30, 	loss=0.037319619208574295
+Epoch=21, 	batch_idx=40, 	loss=0.0621965266764164
+Epoch=21, 	batch_idx=50, 	loss=0.004134211223572493
+Epoch=21, 	batch_idx=60, 	loss=0.039098259061574936
+Epoch=21, 	batch_idx=70, 	loss=0.03283366188406944
+EP 21: F1 score: 0.6403476401727014, Acc: 0.8013333333333333
+Epoch=22, 	batch_idx=0, 	loss=0.003697930136695504
+Epoch=22, 	batch_idx=10, 	loss=0.017219267785549164
+Epoch=22, 	batch_idx=20, 	loss=0.03978775069117546
+Epoch=22, 	batch_idx=30, 	loss=0.05421213433146477
+Epoch=22, 	batch_idx=40, 	loss=0.004458178300410509
+Epoch=22, 	batch_idx=50, 	loss=0.015703458338975906
+Epoch=22, 	batch_idx=60, 	loss=0.018352176994085312
+Epoch=22, 	batch_idx=70, 	loss=0.0699089840054512
+EP 22: F1 score: 0.6072889725807313, Acc: 0.816
+Epoch=23, 	batch_idx=0, 	loss=0.02672526054084301
+Epoch=23, 	batch_idx=10, 	loss=0.004102680366486311
+Epoch=23, 	batch_idx=20, 	loss=0.06071391701698303
+Epoch=23, 	batch_idx=30, 	loss=0.04054867848753929
+Epoch=23, 	batch_idx=40, 	loss=0.04521765932440758
+Epoch=23, 	batch_idx=50, 	loss=0.010919617488980293
+Epoch=23, 	batch_idx=60, 	loss=0.010562391951680183
+Epoch=23, 	batch_idx=70, 	loss=0.0017520547844469547
+EP 23: F1 score: 0.6647953320001152, Acc: 0.824
+Epoch=24, 	batch_idx=0, 	loss=0.0009506826754659414
+Epoch=24, 	batch_idx=10, 	loss=0.005148125812411308
+Epoch=24, 	batch_idx=20, 	loss=0.1021018922328949
+Epoch=24, 	batch_idx=30, 	loss=0.035612624138593674
+Epoch=24, 	batch_idx=40, 	loss=0.09841683506965637
+Epoch=24, 	batch_idx=50, 	loss=0.0019076360622420907
+Epoch=24, 	batch_idx=60, 	loss=0.011387797072529793
+Epoch=24, 	batch_idx=70, 	loss=0.012788859196007252
+EP 24: F1 score: 0.6312806309069754, Acc: 0.8186666666666667
+Epoch=25, 	batch_idx=0, 	loss=0.0865643098950386
+Epoch=25, 	batch_idx=10, 	loss=0.0034860288724303246
+Epoch=25, 	batch_idx=20, 	loss=0.01897551491856575
+Epoch=25, 	batch_idx=30, 	loss=0.040042538195848465
+Epoch=25, 	batch_idx=40, 	loss=0.09179896116256714
+Epoch=25, 	batch_idx=50, 	loss=0.03025197982788086
+Epoch=25, 	batch_idx=60, 	loss=0.023037336766719818
+Epoch=25, 	batch_idx=70, 	loss=0.0009745591669343412
+EP 25: F1 score: 0.6502405526349766, Acc: 0.8246666666666667
+Epoch=26, 	batch_idx=0, 	loss=0.027531590312719345
+Epoch=26, 	batch_idx=10, 	loss=0.0023686131462454796
+Epoch=26, 	batch_idx=20, 	loss=0.007259169593453407
+Epoch=26, 	batch_idx=30, 	loss=0.004189562052488327
+Epoch=26, 	batch_idx=40, 	loss=0.07719162106513977
+Epoch=26, 	batch_idx=50, 	loss=0.01403707917779684
+Epoch=26, 	batch_idx=60, 	loss=0.03665545955300331
+Epoch=26, 	batch_idx=70, 	loss=0.028790077194571495
+EP 26: F1 score: 0.6724297699152177, Acc: 0.816
+Epoch=27, 	batch_idx=0, 	loss=0.0012305574491620064
+Epoch=27, 	batch_idx=10, 	loss=0.024236412718892097
+Epoch=27, 	batch_idx=20, 	loss=0.024388832971453667
+Epoch=27, 	batch_idx=30, 	loss=0.19046567380428314
+Epoch=27, 	batch_idx=40, 	loss=0.0011249689850956202
+Epoch=27, 	batch_idx=50, 	loss=0.032821983098983765
+Epoch=27, 	batch_idx=60, 	loss=0.002418634481728077
+Epoch=27, 	batch_idx=70, 	loss=0.0021131252869963646
+EP 27: F1 score: 0.6591316657346684, Acc: 0.8153333333333334
+Epoch=28, 	batch_idx=0, 	loss=0.06428273767232895
+Epoch=28, 	batch_idx=10, 	loss=0.0025386635679751635
+Epoch=28, 	batch_idx=20, 	loss=0.0030595818534493446
+Epoch=28, 	batch_idx=30, 	loss=0.07156410813331604
+Epoch=28, 	batch_idx=40, 	loss=0.03278220444917679
+Epoch=28, 	batch_idx=50, 	loss=0.000916191260330379
+Epoch=28, 	batch_idx=60, 	loss=0.06145656853914261
+Epoch=28, 	batch_idx=70, 	loss=0.0034635767806321383
+EP 28: F1 score: 0.6578393029123188, Acc: 0.8273333333333334
+Epoch=29, 	batch_idx=0, 	loss=0.0011797278420999646
+Epoch=29, 	batch_idx=10, 	loss=0.07261839509010315
+Epoch=29, 	batch_idx=20, 	loss=0.013234293088316917
+Epoch=29, 	batch_idx=30, 	loss=0.06590566784143448
+Epoch=29, 	batch_idx=40, 	loss=0.0037224837578833103
+Epoch=29, 	batch_idx=50, 	loss=0.013448136858642101
+Epoch=29, 	batch_idx=60, 	loss=0.0008057171362452209
+Epoch=29, 	batch_idx=70, 	loss=0.02662663906812668
+EP 29: F1 score: 0.6676905785630565, Acc: 0.8173333333333334
+Epoch=30, 	batch_idx=0, 	loss=0.001288615632802248
+Epoch=30, 	batch_idx=10, 	loss=0.009350132197141647
+Epoch=30, 	batch_idx=20, 	loss=0.061486538499593735
+Epoch=30, 	batch_idx=30, 	loss=0.10746324807405472
+Epoch=30, 	batch_idx=40, 	loss=0.0007780632586218417
+Epoch=30, 	batch_idx=50, 	loss=0.07200722396373749
+Epoch=30, 	batch_idx=60, 	loss=0.02776290848851204
+Epoch=30, 	batch_idx=70, 	loss=0.029629524797201157
+EP 30: F1 score: 0.6127793420469184, Acc: 0.7973333333333333
+Epoch=31, 	batch_idx=0, 	loss=0.0009317857911810279
+Epoch=31, 	batch_idx=10, 	loss=0.0019436458824202418
+Epoch=31, 	batch_idx=20, 	loss=0.03812795132398605
+Epoch=31, 	batch_idx=30, 	loss=0.006982088554650545
+Epoch=31, 	batch_idx=40, 	loss=0.014497202821075916
+Epoch=31, 	batch_idx=50, 	loss=0.0029090559110045433
+Epoch=31, 	batch_idx=60, 	loss=0.005510847084224224
+Epoch=31, 	batch_idx=70, 	loss=0.1624060422182083
+EP 31: F1 score: 0.6211992186403011, Acc: 0.8093333333333333
+Epoch=32, 	batch_idx=0, 	loss=0.07135599106550217
+Epoch=32, 	batch_idx=10, 	loss=0.050632987171411514
+Epoch=32, 	batch_idx=20, 	loss=0.0011498486855998635
+Epoch=32, 	batch_idx=30, 	loss=0.002260002074763179
+Epoch=32, 	batch_idx=40, 	loss=0.07659856975078583
+Epoch=32, 	batch_idx=50, 	loss=0.020954066887497902
+Epoch=32, 	batch_idx=60, 	loss=0.0013771357480436563
+Epoch=32, 	batch_idx=70, 	loss=0.0005935750086791813
+EP 32: F1 score: 0.6700794395004303, Acc: 0.822
+Epoch=33, 	batch_idx=0, 	loss=0.05622531473636627
+Epoch=33, 	batch_idx=10, 	loss=0.13135698437690735
+Epoch=33, 	batch_idx=20, 	loss=0.027598395943641663
+Epoch=33, 	batch_idx=30, 	loss=0.003543142694979906
+Epoch=33, 	batch_idx=40, 	loss=0.039386458694934845
+Epoch=33, 	batch_idx=50, 	loss=0.06002163887023926
+Epoch=33, 	batch_idx=60, 	loss=0.0040322295390069485
+Epoch=33, 	batch_idx=70, 	loss=0.011432631872594357
+EP 33: F1 score: 0.6318379876704057, Acc: 0.8146666666666667
+Epoch=34, 	batch_idx=0, 	loss=0.0011482065310701728
+Epoch=34, 	batch_idx=10, 	loss=0.14180852472782135
+Epoch=34, 	batch_idx=20, 	loss=0.0016298424452543259
+Epoch=34, 	batch_idx=30, 	loss=0.09245224297046661
+Epoch=34, 	batch_idx=40, 	loss=0.00395944295451045
+Epoch=34, 	batch_idx=50, 	loss=0.009253626689314842
+Epoch=34, 	batch_idx=60, 	loss=0.0014195359544828534
+Epoch=34, 	batch_idx=70, 	loss=0.01042161975055933
+EP 34: F1 score: 0.6664879158997372, Acc: 0.8226666666666667
+Epoch=35, 	batch_idx=0, 	loss=0.0010179473320022225
+Epoch=35, 	batch_idx=10, 	loss=0.026782769709825516
+Epoch=35, 	batch_idx=20, 	loss=0.015484158881008625
+Epoch=35, 	batch_idx=30, 	loss=0.040649786591529846
+Epoch=35, 	batch_idx=40, 	loss=0.08579530566930771
+Epoch=35, 	batch_idx=50, 	loss=0.01882636360824108
+Epoch=35, 	batch_idx=60, 	loss=0.07153478264808655
+Epoch=35, 	batch_idx=70, 	loss=0.0010734443785622716
+EP 35: F1 score: 0.6475385603324921, Acc: 0.822
+Epoch=36, 	batch_idx=0, 	loss=0.0010964032262563705
+Epoch=36, 	batch_idx=10, 	loss=0.012189074419438839
+Epoch=36, 	batch_idx=20, 	loss=0.02853522263467312
+Epoch=36, 	batch_idx=30, 	loss=0.0025626288261264563
+Epoch=36, 	batch_idx=40, 	loss=0.05751129239797592
+Epoch=36, 	batch_idx=50, 	loss=0.005289942491799593
+Epoch=36, 	batch_idx=60, 	loss=0.016279740259051323
+Epoch=36, 	batch_idx=70, 	loss=0.0007605437422171235
+EP 36: F1 score: 0.653888012603094, Acc: 0.8193333333333334
+Epoch=37, 	batch_idx=0, 	loss=0.0024397624656558037
+Epoch=37, 	batch_idx=10, 	loss=0.05165693163871765
+Epoch=37, 	batch_idx=20, 	loss=0.0012248563580214977
+Epoch=37, 	batch_idx=30, 	loss=0.09350887686014175
+Epoch=37, 	batch_idx=40, 	loss=0.07699289917945862
+Epoch=37, 	batch_idx=50, 	loss=0.00788972619920969
+Epoch=37, 	batch_idx=60, 	loss=0.02968132682144642
+Epoch=37, 	batch_idx=70, 	loss=0.0015031725633889437
+EP 37: F1 score: 0.6395087238470026, Acc: 0.826
+Epoch=38, 	batch_idx=0, 	loss=0.001026854501105845
+Epoch=38, 	batch_idx=10, 	loss=0.051479630172252655
+Epoch=38, 	batch_idx=20, 	loss=0.08611973375082016
+Epoch=38, 	batch_idx=30, 	loss=0.0012108116643503308
+Epoch=38, 	batch_idx=40, 	loss=0.017733274027705193
+Epoch=38, 	batch_idx=50, 	loss=0.0015549886738881469
+Epoch=38, 	batch_idx=60, 	loss=0.0015592901036143303
+Epoch=38, 	batch_idx=70, 	loss=0.003869140986353159
+EP 38: F1 score: 0.6282774637609609, Acc: 0.816
+Epoch=39, 	batch_idx=0, 	loss=0.000600341591052711
+Epoch=39, 	batch_idx=10, 	loss=0.001772342948243022
+Epoch=39, 	batch_idx=20, 	loss=0.12023583054542542
+Epoch=39, 	batch_idx=30, 	loss=0.0016528037376701832
+Epoch=39, 	batch_idx=40, 	loss=0.0003933364059776068
+Epoch=39, 	batch_idx=50, 	loss=0.0005460372776724398
+Epoch=39, 	batch_idx=60, 	loss=0.06851634383201599
+Epoch=39, 	batch_idx=70, 	loss=0.002714606700465083
+EP 39: F1 score: 0.5942134041147842, Acc: 0.794
+Epoch=40, 	batch_idx=0, 	loss=0.0521157830953598
+Epoch=40, 	batch_idx=10, 	loss=0.0015932803507894278
+Epoch=40, 	batch_idx=20, 	loss=0.013074835762381554
+Epoch=40, 	batch_idx=30, 	loss=0.015539073385298252
+Epoch=40, 	batch_idx=40, 	loss=0.0018727399874478579
+Epoch=40, 	batch_idx=50, 	loss=0.06740119308233261
+Epoch=40, 	batch_idx=60, 	loss=0.0678509995341301
+Epoch=40, 	batch_idx=70, 	loss=0.001513111055828631
+EP 40: F1 score: 0.6430554580304149, Acc: 0.8173333333333334
+Epoch=41, 	batch_idx=0, 	loss=0.08018597215414047
+Epoch=41, 	batch_idx=10, 	loss=0.0013882394414395094
+Epoch=41, 	batch_idx=20, 	loss=0.004935464821755886
+Epoch=41, 	batch_idx=30, 	loss=0.001112597994506359
+Epoch=41, 	batch_idx=40, 	loss=0.05389087274670601
+Epoch=41, 	batch_idx=50, 	loss=0.012162967585027218
+Epoch=41, 	batch_idx=60, 	loss=0.0010466489475220442
+Epoch=41, 	batch_idx=70, 	loss=0.07055556029081345
+EP 41: F1 score: 0.6489160288976095, Acc: 0.8273333333333334
+Epoch=42, 	batch_idx=0, 	loss=0.0004961398080922663
+Epoch=42, 	batch_idx=10, 	loss=0.00038276842678897083
+Epoch=42, 	batch_idx=20, 	loss=0.0008793399902060628
+Epoch=42, 	batch_idx=30, 	loss=0.10400395095348358
+Epoch=42, 	batch_idx=40, 	loss=0.03573889285326004
+Epoch=42, 	batch_idx=50, 	loss=0.05113840475678444
+Epoch=42, 	batch_idx=60, 	loss=0.1561860740184784
+Epoch=42, 	batch_idx=70, 	loss=0.0030104529578238726
+EP 42: F1 score: 0.6273166800870593, Acc: 0.8253333333333334
+Epoch=43, 	batch_idx=0, 	loss=0.0007128508877940476
+Epoch=43, 	batch_idx=10, 	loss=0.04243097081780434
+Epoch=43, 	batch_idx=20, 	loss=0.009520266205072403
+Epoch=43, 	batch_idx=30, 	loss=0.036749519407749176
+Epoch=43, 	batch_idx=40, 	loss=0.008517992682754993
+Epoch=43, 	batch_idx=50, 	loss=0.000468885205918923
+Epoch=43, 	batch_idx=60, 	loss=0.004137410782277584
+Epoch=43, 	batch_idx=70, 	loss=0.012945782393217087
+EP 43: F1 score: 0.6668201152187293, Acc: 0.832
+Epoch=44, 	batch_idx=0, 	loss=0.0046676285564899445
+Epoch=44, 	batch_idx=10, 	loss=0.013081192038953304
+Epoch=44, 	batch_idx=20, 	loss=0.0014602813171222806
+Epoch=44, 	batch_idx=30, 	loss=0.0339178666472435
+Epoch=44, 	batch_idx=40, 	loss=0.05114149674773216
+Epoch=44, 	batch_idx=50, 	loss=0.00032435788307338953
+Epoch=44, 	batch_idx=60, 	loss=0.0027893828228116035
+Epoch=44, 	batch_idx=70, 	loss=0.0031267269514501095
+EP 44: F1 score: 0.6370262277018492, Acc: 0.8133333333333334
+Epoch=45, 	batch_idx=0, 	loss=0.0007712956867180765
+Epoch=45, 	batch_idx=10, 	loss=0.030851561576128006
+Epoch=45, 	batch_idx=20, 	loss=0.0016756358090788126
+Epoch=45, 	batch_idx=30, 	loss=0.008414837531745434
+Epoch=45, 	batch_idx=40, 	loss=0.0017595394747331738
+Epoch=45, 	batch_idx=50, 	loss=0.0008345452370122075
+Epoch=45, 	batch_idx=60, 	loss=0.0013307187473401427
+Epoch=45, 	batch_idx=70, 	loss=0.008013405837118626
+EP 45: F1 score: 0.6590304240514085, Acc: 0.8113333333333334
+Epoch=46, 	batch_idx=0, 	loss=0.09109513461589813
+Epoch=46, 	batch_idx=10, 	loss=0.0007089949795044959
+Epoch=46, 	batch_idx=20, 	loss=0.005712226033210754
+Epoch=46, 	batch_idx=30, 	loss=0.0010075594764202833
+Epoch=46, 	batch_idx=40, 	loss=0.0007814627606421709
+Epoch=46, 	batch_idx=50, 	loss=0.019763575866818428
+Epoch=46, 	batch_idx=60, 	loss=0.04763629660010338
+Epoch=46, 	batch_idx=70, 	loss=0.0179919246584177
+EP 46: F1 score: 0.6845401982807252, Acc: 0.8286666666666667
+Epoch=47, 	batch_idx=0, 	loss=0.0001981284294743091
+Epoch=47, 	batch_idx=10, 	loss=0.0004064388922415674
+Epoch=47, 	batch_idx=20, 	loss=0.002620727987959981
+Epoch=47, 	batch_idx=30, 	loss=0.0005271221161819994
+Epoch=47, 	batch_idx=40, 	loss=0.026773152872920036
+Epoch=47, 	batch_idx=50, 	loss=0.0043066018261015415
+Epoch=47, 	batch_idx=60, 	loss=0.0005653214757330716
+Epoch=47, 	batch_idx=70, 	loss=0.09127810597419739
+EP 47: F1 score: 0.638914335916366, Acc: 0.8026666666666666
+Epoch=48, 	batch_idx=0, 	loss=0.0005356383044272661
+Epoch=48, 	batch_idx=10, 	loss=0.00716229435056448
+Epoch=48, 	batch_idx=20, 	loss=0.00041105938726104796
+Epoch=48, 	batch_idx=30, 	loss=0.04884762316942215
+Epoch=48, 	batch_idx=40, 	loss=0.00420138705521822
+Epoch=48, 	batch_idx=50, 	loss=0.004495345987379551
+Epoch=48, 	batch_idx=60, 	loss=0.01837194338440895
+Epoch=48, 	batch_idx=70, 	loss=0.0024872655048966408
+EP 48: F1 score: 0.643829543470459, Acc: 0.8193333333333334
+Epoch=49, 	batch_idx=0, 	loss=0.03263618052005768
+Epoch=49, 	batch_idx=10, 	loss=0.00036901855492033064
+Epoch=49, 	batch_idx=20, 	loss=0.0005262342747300863
+Epoch=49, 	batch_idx=30, 	loss=0.01574012078344822
+Epoch=49, 	batch_idx=40, 	loss=0.0016123633831739426
+Epoch=49, 	batch_idx=50, 	loss=0.10640949010848999
+Epoch=49, 	batch_idx=60, 	loss=0.004226618446409702
+Epoch=49, 	batch_idx=70, 	loss=0.002313461387529969
+EP 49: F1 score: 0.6624391411116253, Acc: 0.8193333333333334
+Epoch=50, 	batch_idx=0, 	loss=0.03482050821185112
+Epoch=50, 	batch_idx=10, 	loss=0.047862499952316284
+Epoch=50, 	batch_idx=20, 	loss=0.0007252359646372497
+Epoch=50, 	batch_idx=30, 	loss=0.02194332890212536
+Epoch=50, 	batch_idx=40, 	loss=0.008433685638010502
+Epoch=50, 	batch_idx=50, 	loss=0.043192632496356964
+Epoch=50, 	batch_idx=60, 	loss=0.0019740459974855185
+Epoch=50, 	batch_idx=70, 	loss=0.00032599709811620414
+EP 50: F1 score: 0.6283086797815222, Acc: 0.8166666666666667
+Epoch=51, 	batch_idx=0, 	loss=0.002545372350141406
+Epoch=51, 	batch_idx=10, 	loss=0.0018321616807952523
+Epoch=51, 	batch_idx=20, 	loss=0.012956780381500721
+Epoch=51, 	batch_idx=30, 	loss=0.06301702558994293
+Epoch=51, 	batch_idx=40, 	loss=0.04138132184743881
+Epoch=51, 	batch_idx=50, 	loss=0.03985726460814476
+Epoch=51, 	batch_idx=60, 	loss=0.001129576237872243
+Epoch=51, 	batch_idx=70, 	loss=0.0006748590967617929
+EP 51: F1 score: 0.6669041224123531, Acc: 0.8206666666666667
+Epoch=52, 	batch_idx=0, 	loss=0.0107033159583807
+Epoch=52, 	batch_idx=10, 	loss=0.0018690851284191012
+Epoch=52, 	batch_idx=20, 	loss=0.0015104783233255148
+Epoch=52, 	batch_idx=30, 	loss=0.0036822641268372536
+Epoch=52, 	batch_idx=40, 	loss=0.03236435353755951
+Epoch=52, 	batch_idx=50, 	loss=0.03645871579647064
+Epoch=52, 	batch_idx=60, 	loss=0.022947579622268677
+Epoch=52, 	batch_idx=70, 	loss=0.0004456950700841844
+EP 52: F1 score: 0.6304542966137849, Acc: 0.8153333333333334
+Epoch=53, 	batch_idx=0, 	loss=0.00037317106034606695
+Epoch=53, 	batch_idx=10, 	loss=0.0034714657813310623
+Epoch=53, 	batch_idx=20, 	loss=0.017027007415890694
+Epoch=53, 	batch_idx=30, 	loss=0.0004885224043391645
+Epoch=53, 	batch_idx=40, 	loss=0.032472919672727585
+Epoch=53, 	batch_idx=50, 	loss=0.030905475839972496
+Epoch=53, 	batch_idx=60, 	loss=0.02581484243273735
+Epoch=53, 	batch_idx=70, 	loss=0.009191753342747688
+EP 53: F1 score: 0.6245938883206128, Acc: 0.812
+Epoch=54, 	batch_idx=0, 	loss=0.0018240142380818725
+Epoch=54, 	batch_idx=10, 	loss=0.005753359291702509
+Epoch=54, 	batch_idx=20, 	loss=0.0006850473000667989
+Epoch=54, 	batch_idx=30, 	loss=0.001158843981102109
+Epoch=54, 	batch_idx=40, 	loss=0.01781921647489071
+Epoch=54, 	batch_idx=50, 	loss=0.0004269057826604694
+Epoch=54, 	batch_idx=60, 	loss=0.039600882679224014
+Epoch=54, 	batch_idx=70, 	loss=0.06362637132406235
+EP 54: F1 score: 0.6399710717422408, Acc: 0.8186666666666667
+Epoch=55, 	batch_idx=0, 	loss=0.00020738986495416611
+Epoch=55, 	batch_idx=10, 	loss=0.004942957777529955
+Epoch=55, 	batch_idx=20, 	loss=0.11285969614982605
+Epoch=55, 	batch_idx=30, 	loss=0.09252877533435822
+Epoch=55, 	batch_idx=40, 	loss=0.0002681083860807121
+Epoch=55, 	batch_idx=50, 	loss=0.00037236709613353014
+Epoch=55, 	batch_idx=60, 	loss=0.046351753175258636
+Epoch=55, 	batch_idx=70, 	loss=0.04820510745048523
+EP 55: F1 score: 0.6370938835209076, Acc: 0.8206666666666667
+Epoch=56, 	batch_idx=0, 	loss=0.0007625693688169122
+Epoch=56, 	batch_idx=10, 	loss=0.040837228298187256
+Epoch=56, 	batch_idx=20, 	loss=0.00208150502294302
+Epoch=56, 	batch_idx=30, 	loss=0.033033162355422974
+Epoch=56, 	batch_idx=40, 	loss=0.002143298275768757
+Epoch=56, 	batch_idx=50, 	loss=0.0007839369354769588
+Epoch=56, 	batch_idx=60, 	loss=0.011196413077414036
+Epoch=56, 	batch_idx=70, 	loss=0.014258007518947124
+EP 56: F1 score: 0.6383140762280055, Acc: 0.8073333333333333
+Epoch=57, 	batch_idx=0, 	loss=0.03822091594338417
+Epoch=57, 	batch_idx=10, 	loss=0.028574762865900993
+Epoch=57, 	batch_idx=20, 	loss=0.00074435630813241
+Epoch=57, 	batch_idx=30, 	loss=0.0007129719015210867
+Epoch=57, 	batch_idx=40, 	loss=0.000305255816783756
+Epoch=57, 	batch_idx=50, 	loss=0.0007891484419815242
+Epoch=57, 	batch_idx=60, 	loss=0.054256077855825424
+Epoch=57, 	batch_idx=70, 	loss=0.07772456109523773
+EP 57: F1 score: 0.6355408697385474, Acc: 0.7933333333333333
+Epoch=58, 	batch_idx=0, 	loss=0.055106572806835175
+Epoch=58, 	batch_idx=10, 	loss=0.0016186028951779008
+Epoch=58, 	batch_idx=20, 	loss=0.004165527410805225
+Epoch=58, 	batch_idx=30, 	loss=0.010163947008550167
+Epoch=58, 	batch_idx=40, 	loss=0.0008952655480243266
+Epoch=58, 	batch_idx=50, 	loss=0.0007818082813173532
+Epoch=58, 	batch_idx=60, 	loss=0.10957411676645279
+Epoch=58, 	batch_idx=70, 	loss=0.00018211097631137818
+EP 58: F1 score: 0.6571022199774252, Acc: 0.824
+Epoch=59, 	batch_idx=0, 	loss=0.00018029708007816225
+Epoch=59, 	batch_idx=10, 	loss=0.0004180983523838222
+Epoch=59, 	batch_idx=20, 	loss=0.0003786729939747602
+Epoch=59, 	batch_idx=30, 	loss=0.03148168697953224
+Epoch=59, 	batch_idx=40, 	loss=0.055114854127168655
+Epoch=59, 	batch_idx=50, 	loss=0.0003055339038837701
+Epoch=59, 	batch_idx=60, 	loss=0.009224139153957367
+Epoch=59, 	batch_idx=70, 	loss=0.05860913172364235
+EP 59: F1 score: 0.6197689834295477, Acc: 0.816
+Epoch=60, 	batch_idx=0, 	loss=0.13667745888233185
+Epoch=60, 	batch_idx=10, 	loss=0.0003431109944358468
+Epoch=60, 	batch_idx=20, 	loss=0.0030433516949415207
+Epoch=60, 	batch_idx=30, 	loss=0.04901307448744774
+Epoch=60, 	batch_idx=40, 	loss=0.00016707964823581278
+Epoch=60, 	batch_idx=50, 	loss=0.0641956627368927
+Epoch=60, 	batch_idx=60, 	loss=0.003822275437414646
+Epoch=60, 	batch_idx=70, 	loss=0.0868188813328743
+EP 60: F1 score: 0.6479591741568195, Acc: 0.8226666666666667
+Epoch=61, 	batch_idx=0, 	loss=0.001552945701405406
+Epoch=61, 	batch_idx=10, 	loss=0.016067439690232277
+Epoch=61, 	batch_idx=20, 	loss=0.0007205895381048322
+Epoch=61, 	batch_idx=30, 	loss=0.012781048193573952
+Epoch=61, 	batch_idx=40, 	loss=0.012006040662527084
+Epoch=61, 	batch_idx=50, 	loss=0.0043460531160235405
+Epoch=61, 	batch_idx=60, 	loss=0.009377496317029
+Epoch=61, 	batch_idx=70, 	loss=0.07704886049032211
+EP 61: F1 score: 0.6662205328525536, Acc: 0.824
+Epoch=62, 	batch_idx=0, 	loss=0.0786578431725502
+Epoch=62, 	batch_idx=10, 	loss=0.0006568291573785245
+Epoch=62, 	batch_idx=20, 	loss=0.0004259978886693716
+Epoch=62, 	batch_idx=30, 	loss=0.0876184031367302
+Epoch=62, 	batch_idx=40, 	loss=0.01564093865454197
+Epoch=62, 	batch_idx=50, 	loss=0.06698562204837799
+Epoch=62, 	batch_idx=60, 	loss=0.0008866926073096693
+Epoch=62, 	batch_idx=70, 	loss=0.0024705668911337852
+EP 62: F1 score: 0.6289696262486476, Acc: 0.816
+Epoch=63, 	batch_idx=0, 	loss=0.015767604112625122
+Epoch=63, 	batch_idx=10, 	loss=0.03985846787691116
+Epoch=63, 	batch_idx=20, 	loss=0.002179848263040185
+Epoch=63, 	batch_idx=30, 	loss=0.0004370521055534482
+Epoch=63, 	batch_idx=40, 	loss=0.03910376876592636
+Epoch=63, 	batch_idx=50, 	loss=0.0009538888116367161
+Epoch=63, 	batch_idx=60, 	loss=0.000195468935999088
+Epoch=63, 	batch_idx=70, 	loss=0.00017100005061365664
+EP 63: F1 score: 0.6499794406999364, Acc: 0.8346666666666667
+Epoch=64, 	batch_idx=0, 	loss=0.03114335611462593
+Epoch=64, 	batch_idx=10, 	loss=0.0572311170399189
+Epoch=64, 	batch_idx=20, 	loss=0.00045871216570958495
+Epoch=64, 	batch_idx=30, 	loss=0.004731946159154177
+Epoch=64, 	batch_idx=40, 	loss=0.0003281997051090002
+Epoch=64, 	batch_idx=50, 	loss=0.003789781592786312
+Epoch=64, 	batch_idx=60, 	loss=0.00018751034804154187
+Epoch=64, 	batch_idx=70, 	loss=0.04914679378271103
+EP 64: F1 score: 0.6781011769728267, Acc: 0.834
+Epoch=65, 	batch_idx=0, 	loss=0.0007387242512777448
+Epoch=65, 	batch_idx=10, 	loss=0.0177657138556242
+Epoch=65, 	batch_idx=20, 	loss=0.0008319678017869592
+Epoch=65, 	batch_idx=30, 	loss=0.0009437142289243639
+Epoch=65, 	batch_idx=40, 	loss=0.0004536981869023293
+Epoch=65, 	batch_idx=50, 	loss=0.08700186759233475
+Epoch=65, 	batch_idx=60, 	loss=0.00038125290302559733
+Epoch=65, 	batch_idx=70, 	loss=0.0007628671010024846
+EP 65: F1 score: 0.6359925544026022, Acc: 0.8146666666666667
+Epoch=66, 	batch_idx=0, 	loss=0.0014979260740801692
+Epoch=66, 	batch_idx=10, 	loss=0.0009093593107536435
+Epoch=66, 	batch_idx=20, 	loss=0.01588894985616207
+Epoch=66, 	batch_idx=30, 	loss=0.0007750781951472163
+Epoch=66, 	batch_idx=40, 	loss=0.0003861734876409173
+Epoch=66, 	batch_idx=50, 	loss=0.00019138479547109455
+Epoch=66, 	batch_idx=60, 	loss=0.0009429277270101011
+Epoch=66, 	batch_idx=70, 	loss=9.792665514396504e-05
+EP 66: F1 score: 0.6492399792950172, Acc: 0.824
+Epoch=67, 	batch_idx=0, 	loss=0.00019728617917280644
+Epoch=67, 	batch_idx=10, 	loss=0.000311163195874542
+Epoch=67, 	batch_idx=20, 	loss=0.000132683155243285
+Epoch=67, 	batch_idx=30, 	loss=0.00029840916977263987
+Epoch=67, 	batch_idx=40, 	loss=0.00016228891036007553
+Epoch=67, 	batch_idx=50, 	loss=0.11063075810670853
+Epoch=67, 	batch_idx=60, 	loss=0.0007688879268243909
+Epoch=67, 	batch_idx=70, 	loss=0.0004255310050211847
+EP 67: F1 score: 0.6556714639863429, Acc: 0.818
+Epoch=68, 	batch_idx=0, 	loss=0.06156199052929878
+Epoch=68, 	batch_idx=10, 	loss=0.002444900805130601
+Epoch=68, 	batch_idx=20, 	loss=0.00023392178991343826
+Epoch=68, 	batch_idx=30, 	loss=0.00021900878346059471
+Epoch=68, 	batch_idx=40, 	loss=0.06119074672460556
+Epoch=68, 	batch_idx=50, 	loss=0.044092532247304916
+Epoch=68, 	batch_idx=60, 	loss=0.0017651396337896585
+Epoch=68, 	batch_idx=70, 	loss=0.0002512674545869231
+EP 68: F1 score: 0.6297318626336184, Acc: 0.82
+Epoch=69, 	batch_idx=0, 	loss=0.00022511671704705805
+Epoch=69, 	batch_idx=10, 	loss=0.007645288482308388
+Epoch=69, 	batch_idx=20, 	loss=0.00014711245603393763
+Epoch=69, 	batch_idx=30, 	loss=0.0004052956064697355
+Epoch=69, 	batch_idx=40, 	loss=0.001408391515724361
+Epoch=69, 	batch_idx=50, 	loss=0.11040540039539337
+Epoch=69, 	batch_idx=60, 	loss=0.00032824542722664773
+Epoch=69, 	batch_idx=70, 	loss=0.04217451065778732
+EP 69: F1 score: 0.6444011214826288, Acc: 0.8166666666666667
+Epoch=70, 	batch_idx=0, 	loss=0.0001276026596315205
+Epoch=70, 	batch_idx=10, 	loss=0.07436420768499374
+Epoch=70, 	batch_idx=20, 	loss=0.07585261017084122
+Epoch=70, 	batch_idx=30, 	loss=0.009167199023067951
+Epoch=70, 	batch_idx=40, 	loss=0.0034843129105865955
+Epoch=70, 	batch_idx=50, 	loss=0.0010268414625898004
+Epoch=70, 	batch_idx=60, 	loss=0.0002489176986273378
+Epoch=70, 	batch_idx=70, 	loss=0.00013464389485307038
+EP 70: F1 score: 0.672952175594629, Acc: 0.8233333333333334
+Epoch=71, 	batch_idx=0, 	loss=0.00013805738126393408
+Epoch=71, 	batch_idx=10, 	loss=0.00022572334273718297
+Epoch=71, 	batch_idx=20, 	loss=0.024502618238329887
+Epoch=71, 	batch_idx=30, 	loss=0.00011141598224639893
+Epoch=71, 	batch_idx=40, 	loss=0.0003453983226791024
+Epoch=71, 	batch_idx=50, 	loss=0.0002239208115497604
+Epoch=71, 	batch_idx=60, 	loss=0.00018357898807153106
+Epoch=71, 	batch_idx=70, 	loss=0.004006556235253811
+EP 71: F1 score: 0.6473514879926824, Acc: 0.8226666666666667
+Epoch=72, 	batch_idx=0, 	loss=0.055423539131879807
+Epoch=72, 	batch_idx=10, 	loss=0.00011957883543800563
+Epoch=72, 	batch_idx=20, 	loss=0.0001428847317583859
+Epoch=72, 	batch_idx=30, 	loss=0.0008972332580015063
+Epoch=72, 	batch_idx=40, 	loss=0.05492127314209938
+Epoch=72, 	batch_idx=50, 	loss=0.00016074049926828593
+Epoch=72, 	batch_idx=60, 	loss=0.0799034833908081
+Epoch=72, 	batch_idx=70, 	loss=0.00019116209296043962
+EP 72: F1 score: 0.6675191683620754, Acc: 0.83
+Epoch=73, 	batch_idx=0, 	loss=0.08597953617572784
+Epoch=73, 	batch_idx=10, 	loss=0.000275199708994478
+Epoch=73, 	batch_idx=20, 	loss=0.00017221570305991918
+Epoch=73, 	batch_idx=30, 	loss=0.0027226342353969812
+Epoch=73, 	batch_idx=40, 	loss=0.09417907893657684
+Epoch=73, 	batch_idx=50, 	loss=0.05314712971448898
+Epoch=73, 	batch_idx=60, 	loss=0.0098387710750103
+Epoch=73, 	batch_idx=70, 	loss=0.011426742188632488
+EP 73: F1 score: 0.6513829097833335, Acc: 0.8233333333333334
+Epoch=74, 	batch_idx=0, 	loss=0.00021965977794025093
+Epoch=74, 	batch_idx=10, 	loss=0.00341975805349648
+Epoch=74, 	batch_idx=20, 	loss=0.00382256880402565
+Epoch=74, 	batch_idx=30, 	loss=0.000586624548304826
+Epoch=74, 	batch_idx=40, 	loss=0.0004881342756561935
+Epoch=74, 	batch_idx=50, 	loss=0.00012447578774299473
+Epoch=74, 	batch_idx=60, 	loss=0.002049759030342102
+Epoch=74, 	batch_idx=70, 	loss=0.00011267482477705926
+EP 74: F1 score: 0.662630828564389, Acc: 0.8293333333333334
+Epoch=75, 	batch_idx=0, 	loss=0.0005735030281357467
+Epoch=75, 	batch_idx=10, 	loss=0.0010334394173696637
+Epoch=75, 	batch_idx=20, 	loss=0.009852188639342785
+Epoch=75, 	batch_idx=30, 	loss=0.00013761347508989275
+Epoch=75, 	batch_idx=40, 	loss=0.0063689337112009525
+Epoch=75, 	batch_idx=50, 	loss=9.01258026715368e-05
+Epoch=75, 	batch_idx=60, 	loss=0.009275007992982864
+Epoch=75, 	batch_idx=70, 	loss=9.222323569701985e-05
+EP 75: F1 score: 0.6703206428006012, Acc: 0.8293333333333334
+Epoch=76, 	batch_idx=0, 	loss=0.05684487894177437
+Epoch=76, 	batch_idx=10, 	loss=9.165793744614348e-05
+Epoch=76, 	batch_idx=20, 	loss=0.012171205133199692
+Epoch=76, 	batch_idx=30, 	loss=7.956613990245387e-05
+Epoch=76, 	batch_idx=40, 	loss=7.408011151710525e-05
+Epoch=76, 	batch_idx=50, 	loss=0.07401429861783981
+Epoch=76, 	batch_idx=60, 	loss=7.754763646516949e-05
+Epoch=76, 	batch_idx=70, 	loss=7.732224912615493e-05
+EP 76: F1 score: 0.6690798879159876, Acc: 0.8206666666666667
+Epoch=77, 	batch_idx=0, 	loss=7.324571924982592e-05
+Epoch=77, 	batch_idx=10, 	loss=0.0004958052886649966
+Epoch=77, 	batch_idx=20, 	loss=0.00013203953858464956
+Epoch=77, 	batch_idx=30, 	loss=0.00032435075263492763
+Epoch=77, 	batch_idx=40, 	loss=0.0011732799466699362
+Epoch=77, 	batch_idx=50, 	loss=0.00014749237743671983
+Epoch=77, 	batch_idx=60, 	loss=0.0007511117146350443
+Epoch=77, 	batch_idx=70, 	loss=9.991660044761375e-05
+EP 77: F1 score: 0.6811752416496546, Acc: 0.8306666666666667
+Epoch=78, 	batch_idx=0, 	loss=0.0004995998460799456
+Epoch=78, 	batch_idx=10, 	loss=9.465090261073783e-05
+Epoch=78, 	batch_idx=20, 	loss=0.0002559499116614461
+Epoch=78, 	batch_idx=30, 	loss=7.178385567385703e-05
+Epoch=78, 	batch_idx=40, 	loss=0.01436743512749672
+Epoch=78, 	batch_idx=50, 	loss=0.0006728677544742823
+Epoch=78, 	batch_idx=60, 	loss=0.00019418768351897597
+Epoch=78, 	batch_idx=70, 	loss=0.010314284823834896
+EP 78: F1 score: 0.6678008585024757, Acc: 0.8153333333333334
+Epoch=79, 	batch_idx=0, 	loss=0.07842295616865158
+Epoch=79, 	batch_idx=10, 	loss=8.88165959622711e-05
+Epoch=79, 	batch_idx=20, 	loss=9.649079584050924e-05
+Epoch=79, 	batch_idx=30, 	loss=0.012115265242755413
+Epoch=79, 	batch_idx=40, 	loss=0.0001178897000500001
+Epoch=79, 	batch_idx=50, 	loss=9.765953291207552e-05
+Epoch=79, 	batch_idx=60, 	loss=0.00012188764958409593
+Epoch=79, 	batch_idx=70, 	loss=0.00031918060267344117
+EP 79: F1 score: 0.6707137559194021, Acc: 0.828
+Epoch=80, 	batch_idx=0, 	loss=0.000754849927034229
+Epoch=80, 	batch_idx=10, 	loss=8.239711314672604e-05
+Epoch=80, 	batch_idx=20, 	loss=0.04175237938761711
+Epoch=80, 	batch_idx=30, 	loss=7.894344889791682e-05
+Epoch=80, 	batch_idx=40, 	loss=6.228424899745733e-05
+Epoch=80, 	batch_idx=50, 	loss=0.00012592715211212635
+Epoch=80, 	batch_idx=60, 	loss=0.038800232112407684
+Epoch=80, 	batch_idx=70, 	loss=0.024701712653040886
+EP 80: F1 score: 0.6524832135713203, Acc: 0.82
+Epoch=81, 	batch_idx=0, 	loss=0.018309125676751137
+Epoch=81, 	batch_idx=10, 	loss=0.019053639844059944
+Epoch=81, 	batch_idx=20, 	loss=0.00015869599883444607
+Epoch=81, 	batch_idx=30, 	loss=0.0007495646132156253
+Epoch=81, 	batch_idx=40, 	loss=0.00010132322495337576
+Epoch=81, 	batch_idx=50, 	loss=0.0013430743711069226
+Epoch=81, 	batch_idx=60, 	loss=7.968884165165946e-05
+Epoch=81, 	batch_idx=70, 	loss=0.02060214802622795
+EP 81: F1 score: 0.6579319380681004, Acc: 0.8206666666666667
+Epoch=82, 	batch_idx=0, 	loss=0.000202323411940597
+Epoch=82, 	batch_idx=10, 	loss=0.00027347286231815815
+Epoch=82, 	batch_idx=20, 	loss=0.052076250314712524
+Epoch=82, 	batch_idx=30, 	loss=0.0006953994161449373
+Epoch=82, 	batch_idx=40, 	loss=9.85766455414705e-05
+Epoch=82, 	batch_idx=50, 	loss=0.0007395540014840662
+Epoch=82, 	batch_idx=60, 	loss=0.00025448386440984905
+Epoch=82, 	batch_idx=70, 	loss=0.0004460288037080318
+EP 82: F1 score: 0.657751448263237, Acc: 0.8233333333333334
+Epoch=83, 	batch_idx=0, 	loss=0.0010916194878518581
+Epoch=83, 	batch_idx=10, 	loss=0.0786876305937767
+Epoch=83, 	batch_idx=20, 	loss=0.013260719366371632
+Epoch=83, 	batch_idx=30, 	loss=9.44326093303971e-05
+Epoch=83, 	batch_idx=40, 	loss=0.0005379661452025175
+Epoch=83, 	batch_idx=50, 	loss=0.0009682588861323893
+Epoch=83, 	batch_idx=60, 	loss=0.0027743978425860405
+Epoch=83, 	batch_idx=70, 	loss=0.002521070884540677
+EP 83: F1 score: 0.6648702143856215, Acc: 0.8213333333333334
+Epoch=84, 	batch_idx=0, 	loss=5.622722892439924e-05
+Epoch=84, 	batch_idx=10, 	loss=6.347341695800424e-05
+Epoch=84, 	batch_idx=20, 	loss=6.696735363220796e-05
+Epoch=84, 	batch_idx=30, 	loss=8.25047172838822e-05
+Epoch=84, 	batch_idx=40, 	loss=0.0007670632330700755
+Epoch=84, 	batch_idx=50, 	loss=5.6668428442208096e-05
+Epoch=84, 	batch_idx=60, 	loss=0.00010939331696135923
+Epoch=84, 	batch_idx=70, 	loss=0.00017837111954577267
+EP 84: F1 score: 0.6604540128799947, Acc: 0.834
+Epoch=85, 	batch_idx=0, 	loss=0.0002656558935996145
+Epoch=85, 	batch_idx=10, 	loss=0.0002300391352036968
+Epoch=85, 	batch_idx=20, 	loss=9.275655611418188e-05
+Epoch=85, 	batch_idx=30, 	loss=6.076803038013168e-05
+Epoch=85, 	batch_idx=40, 	loss=0.005599036347121
+Epoch=85, 	batch_idx=50, 	loss=5.311803033691831e-05
+Epoch=85, 	batch_idx=60, 	loss=0.07097826898097992
+Epoch=85, 	batch_idx=70, 	loss=7.861808990128338e-05
+EP 85: F1 score: 0.6552810264096783, Acc: 0.8266666666666667
+Epoch=86, 	batch_idx=0, 	loss=5.7901568652596325e-05
+Epoch=86, 	batch_idx=10, 	loss=9.521708852844313e-05
+Epoch=86, 	batch_idx=20, 	loss=0.0005754716112278402
+Epoch=86, 	batch_idx=30, 	loss=0.000161690593813546
+Epoch=86, 	batch_idx=40, 	loss=0.0001337807043455541
+Epoch=86, 	batch_idx=50, 	loss=0.0005312140565365553
+Epoch=86, 	batch_idx=60, 	loss=0.0011374340392649174
+Epoch=86, 	batch_idx=70, 	loss=7.665011798962951e-05
+EP 86: F1 score: 0.6811574262884021, Acc: 0.8286666666666667
+Epoch=87, 	batch_idx=0, 	loss=0.0004895163583569229
+Epoch=87, 	batch_idx=10, 	loss=5.1163577154511586e-05
+Epoch=87, 	batch_idx=20, 	loss=6.090412352932617e-05
+Epoch=87, 	batch_idx=30, 	loss=0.006993954535573721
+Epoch=87, 	batch_idx=40, 	loss=0.02858668565750122
+Epoch=87, 	batch_idx=50, 	loss=0.00025042842025868595
+Epoch=87, 	batch_idx=60, 	loss=0.05921424925327301
+Epoch=87, 	batch_idx=70, 	loss=0.004201170057058334
+EP 87: F1 score: 0.6440984063837765, Acc: 0.8246666666666667
+Epoch=88, 	batch_idx=0, 	loss=6.476863200077787e-05
+Epoch=88, 	batch_idx=10, 	loss=0.00836894754320383
+Epoch=88, 	batch_idx=20, 	loss=5.217896250542253e-05
+Epoch=88, 	batch_idx=30, 	loss=0.0011944422731176019
+Epoch=88, 	batch_idx=40, 	loss=5.623894321615808e-05
+Epoch=88, 	batch_idx=50, 	loss=4.8546018660999835e-05
+Epoch=88, 	batch_idx=60, 	loss=5.755387610406615e-05
+Epoch=88, 	batch_idx=70, 	loss=6.452058732975274e-05
+EP 88: F1 score: 0.6596960243205744, Acc: 0.82
+Epoch=89, 	batch_idx=0, 	loss=9.009525092551485e-05
+Epoch=89, 	batch_idx=10, 	loss=5.0191640184493735e-05
+Epoch=89, 	batch_idx=20, 	loss=0.004032750613987446
+Epoch=89, 	batch_idx=30, 	loss=4.314947364036925e-05
+Epoch=89, 	batch_idx=40, 	loss=6.519957241835073e-05
+Epoch=89, 	batch_idx=50, 	loss=4.71699568151962e-05
+Epoch=89, 	batch_idx=60, 	loss=5.225129643804394e-05
+Epoch=89, 	batch_idx=70, 	loss=5.094375228509307e-05
+EP 89: F1 score: 0.6634514027037781, Acc: 0.828
+Epoch=90, 	batch_idx=0, 	loss=4.925257962895557e-05
+Epoch=90, 	batch_idx=10, 	loss=5.8027748309541494e-05
+Epoch=90, 	batch_idx=20, 	loss=6.79246659274213e-05
+Epoch=90, 	batch_idx=30, 	loss=0.03860011696815491
+Epoch=90, 	batch_idx=40, 	loss=0.00042176825809292495
+Epoch=90, 	batch_idx=50, 	loss=0.005161104258149862
+Epoch=90, 	batch_idx=60, 	loss=6.489748193416744e-05
+Epoch=90, 	batch_idx=70, 	loss=4.6556073357351124e-05
+EP 90: F1 score: 0.6873843664598527, Acc: 0.8373333333333334
+Epoch=91, 	batch_idx=0, 	loss=0.00014186892076395452
+Epoch=91, 	batch_idx=10, 	loss=6.909668445587158e-05
+Epoch=91, 	batch_idx=20, 	loss=5.6527929700678214e-05
+Epoch=91, 	batch_idx=30, 	loss=5.9556998166954145e-05
+Epoch=91, 	batch_idx=40, 	loss=0.003778481390327215
+Epoch=91, 	batch_idx=50, 	loss=5.070960833108984e-05
+Epoch=91, 	batch_idx=60, 	loss=6.0758313338737935e-05
+Epoch=91, 	batch_idx=70, 	loss=5.241551480139606e-05
+EP 91: F1 score: 0.6601753842668175, Acc: 0.8306666666666667
+Epoch=92, 	batch_idx=0, 	loss=7.335987902479246e-05
+Epoch=92, 	batch_idx=10, 	loss=6.24916356173344e-05
+Epoch=92, 	batch_idx=20, 	loss=7.967836427269503e-05
+Epoch=92, 	batch_idx=30, 	loss=0.0041172560304403305
+Epoch=92, 	batch_idx=40, 	loss=5.8850953791989014e-05
+Epoch=92, 	batch_idx=50, 	loss=5.982828952255659e-05
+Epoch=92, 	batch_idx=60, 	loss=4.8000874812714756e-05
+Epoch=92, 	batch_idx=70, 	loss=6.066133573767729e-05
+EP 92: F1 score: 0.6710537733279149, Acc: 0.8246666666666667
+Epoch=93, 	batch_idx=0, 	loss=6.365472654579207e-05
+Epoch=93, 	batch_idx=10, 	loss=4.5123477320885286e-05
+Epoch=93, 	batch_idx=20, 	loss=0.00012311046884860843
+Epoch=93, 	batch_idx=30, 	loss=4.475680907489732e-05
+Epoch=93, 	batch_idx=40, 	loss=5.056240479461849e-05
+Epoch=93, 	batch_idx=50, 	loss=6.555444997502491e-05
+Epoch=93, 	batch_idx=60, 	loss=0.00036769354483112693
+Epoch=93, 	batch_idx=70, 	loss=6.019286229275167e-05
+EP 93: F1 score: 0.6497748887052216, Acc: 0.818
+Epoch=94, 	batch_idx=0, 	loss=6.421057332772762e-05
+Epoch=94, 	batch_idx=10, 	loss=4.565895869745873e-05
+Epoch=94, 	batch_idx=20, 	loss=6.301993562374264e-05
+Epoch=94, 	batch_idx=30, 	loss=5.145026443642564e-05
+Epoch=94, 	batch_idx=40, 	loss=4.96015818498563e-05
+Epoch=94, 	batch_idx=50, 	loss=0.0002535531239118427
+Epoch=94, 	batch_idx=60, 	loss=3.797264798777178e-05
+Epoch=94, 	batch_idx=70, 	loss=3.642573210527189e-05
+EP 94: F1 score: 0.6519456066468426, Acc: 0.82
+Epoch=95, 	batch_idx=0, 	loss=4.86690660181921e-05
+Epoch=95, 	batch_idx=10, 	loss=4.0706661820877343e-05
+Epoch=95, 	batch_idx=20, 	loss=3.901101081282832e-05
+Epoch=95, 	batch_idx=30, 	loss=4.734294270747341e-05
+Epoch=95, 	batch_idx=40, 	loss=4.002696732641198e-05
+Epoch=95, 	batch_idx=50, 	loss=7.472441211575642e-05
+Epoch=95, 	batch_idx=60, 	loss=0.0410584919154644
+Epoch=95, 	batch_idx=70, 	loss=3.761497282539494e-05
+EP 95: F1 score: 0.6673778778826858, Acc: 0.8293333333333334
+Epoch=96, 	batch_idx=0, 	loss=3.5137811210006475e-05
+Epoch=96, 	batch_idx=10, 	loss=3.69053814210929e-05
+Epoch=96, 	batch_idx=20, 	loss=4.011497367173433e-05
+Epoch=96, 	batch_idx=30, 	loss=3.695847044582479e-05
+Epoch=96, 	batch_idx=40, 	loss=3.403607843210921e-05
+Epoch=96, 	batch_idx=50, 	loss=0.00047246820759028196
+Epoch=96, 	batch_idx=60, 	loss=0.00011487236770335585
+Epoch=96, 	batch_idx=70, 	loss=3.924886914319359e-05
+EP 96: F1 score: 0.663000981836773, Acc: 0.826
+Epoch=97, 	batch_idx=0, 	loss=4.75923516205512e-05
+Epoch=97, 	batch_idx=10, 	loss=0.03429544344544411
+Epoch=97, 	batch_idx=20, 	loss=4.738321513286792e-05
+Epoch=97, 	batch_idx=30, 	loss=4.4333872210700065e-05
+Epoch=97, 	batch_idx=40, 	loss=4.861128036282025e-05
+Epoch=97, 	batch_idx=50, 	loss=4.2016054067062214e-05
+Epoch=97, 	batch_idx=60, 	loss=3.9686823583906516e-05
+Epoch=97, 	batch_idx=70, 	loss=3.743248453247361e-05
+EP 97: F1 score: 0.6481122415366445, Acc: 0.82
+Epoch=98, 	batch_idx=0, 	loss=0.011244585737586021
+Epoch=98, 	batch_idx=10, 	loss=4.18912350141909e-05
+Epoch=98, 	batch_idx=20, 	loss=3.7367281038314104e-05
+Epoch=98, 	batch_idx=30, 	loss=3.846122490358539e-05
+Epoch=98, 	batch_idx=40, 	loss=3.201348226866685e-05
+Epoch=98, 	batch_idx=50, 	loss=3.795950397034176e-05
+Epoch=98, 	batch_idx=60, 	loss=3.923719486920163e-05
+Epoch=98, 	batch_idx=70, 	loss=3.2708088838262483e-05
+EP 98: F1 score: 0.6636924773843642, Acc: 0.8293333333333334
+Epoch=99, 	batch_idx=0, 	loss=4.123656253796071e-05
+Epoch=99, 	batch_idx=10, 	loss=4.135835843044333e-05
+Epoch=99, 	batch_idx=20, 	loss=4.985915802535601e-05
+Epoch=99, 	batch_idx=30, 	loss=4.3081447074655443e-05
+Epoch=99, 	batch_idx=40, 	loss=3.963257040595636e-05
+Epoch=99, 	batch_idx=50, 	loss=3.7087014788994566e-05
+Epoch=99, 	batch_idx=60, 	loss=3.5760760511038825e-05
+Epoch=99, 	batch_idx=70, 	loss=3.4800606954377145e-05
+EP 99: F1 score: 0.6659440726374339, Acc: 0.8293333333333334
+Test: F1 score: 0.7748177849404768, Acc: 0.862

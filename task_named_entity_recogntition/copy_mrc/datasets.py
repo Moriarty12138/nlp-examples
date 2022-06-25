@@ -111,13 +111,13 @@ class Example:
         #         ))
 
         # 构建测试集时去掉
-        if self.trigger.text:
-            assert self.trigger.text == "".join(self.tokens[self.trigger.start:self.trigger.end]), \
-                "原数据(id={})存在错误,触发词为 '{}', 数据给出位置截出的词为 '{}'. 起始位置为 {}, 结束位置为 {} ".format(
-                    self.idx, self.trigger.text,
-                    ''.join(self.tokens[self.trigger.start:self.trigger.end]),
-                    self.trigger.start, self.trigger.end
-                )
+        # if self.trigger.text:
+        #     assert self.trigger.text == "".join(self.tokens[self.trigger.start:self.trigger.end]), \
+        #         "原数据(id={})存在错误,触发词为 '{}', 数据给出位置截出的词为 '{}'. 起始位置为 {}, 结束位置为 {} ".format(
+        #             self.idx, self.trigger.text,
+        #             ''.join(self.tokens[self.trigger.start:self.trigger.end]),
+        #             self.trigger.start, self.trigger.end
+        #         )
 
         self.re_token()
 
@@ -143,10 +143,10 @@ class Example:
         # print("原文为 '{}', 转换完后为 '{}'. ".format(self.trigger.text, text_))
 
         # 构建测试集时去掉
-        if self.trigger.start and self.trigger.end:
-            assert self.trigger.text == text_, \
-                "不匹配, 原文为 '{}', 转换完后为 '{}'. 起始位置为 {}, 结束位置为 {} ".format(
-                    self.trigger.text, text_, start_, end_)
+        # if self.trigger.start and self.trigger.end:
+        #     assert self.trigger.text == text_, \
+        #         "不匹配, 原文为 '{}', 转换完后为 '{}'. 起始位置为 {}, 结束位置为 {} ".format(
+        #             self.trigger.text, text_, start_, end_)
 
         self.trigger.start = start_
         self.trigger.end = end_
@@ -160,6 +160,8 @@ class Example:
                 s = i
             if x <= end <= y:
                 e = i
+        if e - s > 4:  # 设置一个跨度的阈值
+            e = s + 1
         ts = self.old_tokens[s:e]
         return "".join(ts), s, e
 
@@ -322,7 +324,7 @@ if __name__ == '__main__':
     # with open('../../datasets/Event_Competition/testA.json', 'r', encoding='utf-8') as reader:
     #     js = json.load(reader)
     #
-    # texts_pred, starts_pred, ends_pred = load_pred("./pred-test.txt")
+    # texts_pred, starts_pred, ends_pred = load_pred("./pred-test.txt.bak")
     # for i in range(len(texts_pred)):
     #     new_pred, new_start, new_end = examples[i].get_trigger(int(starts_pred[i]), int(ends_pred[i]))
     #     del js[i]['sentence'], js[i]['tokens'], js[i]['tokens_count']

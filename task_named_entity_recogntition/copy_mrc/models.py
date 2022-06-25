@@ -42,7 +42,7 @@ class BertForQuestionAnswering(BertPreTrainedModel):
 
         logits = self.qa_outputs(sequence_output)
         # doc_mask[:,0] = 0
-        logits = logits + p_mask.unsqueeze(-1) * -10000.0  # 修改部分，只采用前半部分的输出
+        # logits = logits + p_mask.unsqueeze(-1) * -10000.0  # 修改部分，只采用前半部分的输出
         start_logits, end_logits = logits.split(1, dim=-1)
         start_logits = start_logits.squeeze(-1)
         end_logits = end_logits.squeeze(-1)
