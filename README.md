@@ -5,9 +5,13 @@
 
 目录结构：
 
-* classification 文本分类
-  * Sequence_Classification_with_IMDb_Reviews.py 在 distilbert 上进行 fine-tuning ，数据集采用 IMDb 英文数据集。(Transformers/PyTorch)
-  * iflytek_classification.py 在iflytek长文本分类数据集上对BERT模型进行 fine-tuning
-* summarization 文本摘要
-  * bart 使用开源CPT预训练模型作为bart权重，完成文本摘要训练。  
-* hr_analysis.ipynb 员工离职数据分析，包含一些图表的画法
+* task_classification 文本分类任务
+  * bert 使用 BERT 模型
+  * textcnn 使用 TextCNN 模型
+* task_named_entity_recognition 命名实体识别任务
+  * mrc 使用阅读理解的方法
+* task_text_style_transformer 文本风格迁移任务
+  * dgst DGST 模型在非平行语料上进行文本风格迁移
+  * pre-trained-formality-transfer 使用 BART 模型在平行语料上进行文本风格迁移
+* task_text_summarization 文本摘要
+  * bart 使用 BART 模型进行文本摘要任务
