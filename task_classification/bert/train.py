@@ -24,14 +24,14 @@ def get_test_data(y_pred, args):
         if y_pred[i] < 7:
             js[i]["event_mention"] = {
                 "trigger": {
-                "text": "",
-                "offset": [
-                    0,
-                    0
-                ]
-            },
-            "event_type": id_event_map[y_pred[i]]
-        }
+                    "text": "",
+                    "offset": [
+                        0,
+                        0
+                    ]
+                },
+                "event_type": id_event_map[y_pred[i]]
+            }
         else:
             js[i]["event_mention"] = {}
     f = json.dumps(js, ensure_ascii=False)
@@ -40,7 +40,10 @@ def get_test_data(y_pred, args):
 
 
 def do_test(dataloader, args, log_path):
-    model = BertForSequenceClassification.from_pretrained("{}/best_model/".format(args.model_save_path), num_labels=8)
+    model = BertForSequenceClassification.from_pretrained(
+        "{}/best_model/".format(args.model_save_path),
+        num_labels=8
+    )
     model = model.to(args.device)
     model.eval()
     y_true, y_pred = [], []
@@ -76,6 +79,12 @@ def do_vaild(model, dataloader, ep, args, log_path, score):
         y_true.extend(labels.tolist())
         y_pred.extend(predictions.tolist())
 
+    # 获取bad case
+    with open("./bad_case/bad_case_ep_{}.txt".format(ep), 'w', encoding='utf-8') as writer:
+        for i in range(len(y_pred)):
+            if y_true[i] != y_pred[i]:
+                writer.write("id {}: y_pred={}, y_true={}\n".format(i, y_pred[i], y_true[i]))
+
     f1, acc = evaluation(y_true, y_pred, average='macro')
     print("EP {}: F1 score: {}, Acc: {}".format(ep, f1, acc))
     with open(log_path, 'a', encoding="utf-8") as writer:
@@ -92,6 +101,7 @@ def do_vaild(model, dataloader, ep, args, log_path, score):
 
 
 def main():
+    # args
     args = get_args()
     train_time = time.time()
     train_time = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime(train_time))
@@ -102,23 +112,30 @@ def main():
         for k, v in vars(args).items():
             writer.write("{}, \t{}\n".format(k, v))
 
-    model = BertForSequenceClassification.from_pretrained(args.model_name_or_path, num_labels=8)
+    # model & tokenizer
+    model = BertForSequenceClassification.from_pretrained(
+        args.model_name_or_path,
+        num_labels=8,
+    )
     tokenizer = BertTokenizer.from_pretrained(args.model_name_or_path)
     model = model.to(args.device)
 
+    # dataset & dataloader
     train_dataset = BertDataset(args.train_dataset_path, tokenizer, mode='train')
-    train_dataloader = data.DataLoader(train_dataset, batch_size=128, shuffle=True, collate_fn=collate_fn)
+    train_dataloader = data.DataLoader(train_dataset, batch_size=64, shuffle=True, collate_fn=collate_fn)
     valid_dataset = BertDataset(args.valid_dataset_path, tokenizer, mode='valid')
-    valid_dataloader = data.DataLoader(valid_dataset, batch_size=128, shuffle=False, collate_fn=collate_fn)
+    valid_dataloader = data.DataLoader(valid_dataset, batch_size=4, shuffle=False, collate_fn=collate_fn)
     test_dataset = BertDataset(args.test_dataset_path, tokenizer, mode='test')
-    test_dataloader = data.DataLoader(test_dataset, batch_size=128, shuffle=False, collate_fn=collate_fn)
+    test_dataloader = data.DataLoader(test_dataset, batch_size=4, shuffle=False, collate_fn=collate_fn)
 
+    # optimizer & scheduler
     total_steps = len(train_dataloader) * args.n_epochs
     no_decay = ['bias', 'LayerNorm.bias', 'LayerNorm.weight']
     optimizer_group_parameters = [
         {'params': [p for n, p in model.named_parameters() if not any(nd in n for nd in no_decay)],
          'weight_decay': 0.01},
-        {'params': [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
+        {'params': [
+            p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
     ]
     optimizer = AdamW(optimizer_group_parameters, lr=args.lr, eps=1e-8)
     scheduler = get_linear_schedule_with_warmup(
@@ -135,7 +152,8 @@ def main():
                 attention_mask = batch['attention_mask'].to(args.device)
                 labels = batch['labels'].to(args.device)
 
-                output = model(input_ids, token_type_ids=token_type_ids, attention_mask=attention_mask, labels=labels)
+                output = model(
+                    input_ids, token_type_ids=token_type_ids, attention_mask=attention_mask, labels=labels)
                 loss = output.loss
 
                 loss.backward()
@@ -150,7 +168,8 @@ def main():
                 scheduler.step()
 
             if args.do_eval:
-                score = do_vaild(model, dataloader=valid_dataloader, ep=ep, args=args, log_path=log_path, score=score)
+                score = do_vaild(
+                    model, dataloader=valid_dataloader, ep=ep, args=args, log_path=log_path, score=score)
 
     if args.do_test:
         do_test(dataloader=test_dataloader, args=args, log_path=log_path)
